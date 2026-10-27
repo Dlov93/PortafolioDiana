@@ -1,7 +1,7 @@
 /* Reseteo básico y variables */
 :root {
-    --color-primario: #c513e9;
-    --color-secundario: #6925e7;
+    --color-primario: #dd7df1;
+    --color-secundario: #8148eb;
     --color-fondo: #120649;
     --color-texto: #62b9f3;
 }
@@ -221,6 +221,3 @@ footer {
     padding: 20px;
 }
 
-#boton-ver-kitbox{
-    background-color: #120649;
-}
