@@ -1,0 +1,222 @@
+/* Reseteo básico y variables */
+:root {
+    --color-primario: #c513e9;
+    --color-secundario: #6925e7;
+    --color-fondo: #120649;
+    --color-texto: #62b9f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #120649;
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* Navegación */
+header {
+    background-color: var(--color-secundario);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-texto);
+}
+
+/* Secciones Generales */
+.seccion {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.bg-claro {
+    background-color: var(--color-fondo);
+}
+
+h2 {
+    margin-bottom: 40px;
+    color: var(--color-primario);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh; /* min-height es mejor para evitar recortes en móviles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    color: white;
+    padding: 100px 5% 50px 5%; /* Espaciado superior para que el menú no tape el contenido */
+}
+
+/* Contenedor principal que agrupa imagen y texto */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Espacio entre la foto y el texto */
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Contenedor de la Imagen */
+.hero-imagen {
+    flex: 1; /* Ocupa una parte del espacio disponible */
+    display: flex;
+    justify-content: flex-end; /* Alinea la foto hacia la derecha, acercándola al texto */
+}
+
+/* Estilos de la imagen, el rectángulo y el hover */
+.hero-imagen img {
+    width: 100%;
+    max-width: 350px; /* Tamaño máximo de tu foto */
+    height: auto;
+    border-radius: 10px; /* Bordes ligeramente redondeados (opcional) */
+    border: 5px solid var(--color-texto); /* Borde inicial blanco */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Sombra suave para dar profundidad */
+    transition: all 0.3s ease; /* Transición suave para el efecto hover */
+    object-fit: cover;
+}
+
+/* El efecto Hover con el color secundario */
+.hero-imagen img:hover {
+    transform: translateY(-10px); /* Hace que la imagen "suba" un poco */
+    border-color: var(--color-secundario); /* Cambia el borde a tu azul claro */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4); /* Hace la sombra más intensa */
+}
+
+/* Contenedor del Texto */
+.hero-content {
+    flex: 1; /* Ocupa la otra parte del espacio disponible */
+    text-align: left; /* Alineamos el texto a la izquierda */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #e0e0e0; /* Un gris muy claro para contrastar con el fondo */
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 400px; /* Evita que las líneas de texto sean demasiado largas */
+}
+
+/* Diseño Responsivo (Para celulares) */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; /* Pone la imagen arriba y el texto abajo en móviles */
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .hero-imagen {
+        justify-content: center;
+    }
+    
+    .hero-content {
+        text-align: center; /* Centra el texto en móviles */
+    }
+    
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--color-secundario);
+    color: rgb(247, 246, 246);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Grids (Habilidades y Proyectos) */
+.grid-habilidades, .grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card-habilidad, .card-proyecto {
+    background: var(--color-secundario);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+/* Quitar los puntos de la lista de experiencia */
+#experiencia ul {
+    list-style: none; /* Esto elimina los puntos */
+    padding: 0;       /* Quita el espacio extra que los puntos dejaban a la izquierda */
+}
+
+#experiencia li {
+    margin-bottom: 15px; /* Da un pequeño espacio entre cada experiencia */
+}
+
+.card-proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.enlace-github {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-secundario);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protafolio Diana Ocampo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!--Navegación -->
+    <header>
+        <nav>
+            <div class="logo">Portafolio Diana Ocampo</div>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <!-- Contenedor de la Imagen -->
+            <div class="hero-imagen">
+                <!-- Foto -->
+                <img src="/Fotos/Foto_Diana.jpg" alt="Foto de Diana Ocampo">
+            </div>
+
+            <!-- Contenedor del Texto -->
+            <div class="hero-content">
+                <h1>¡Hola! Soy Diana Ocampo</h1>
+                <h2>Desarrolladora Full Stack Java | Ingeniería de Sistemas</h2>
+                <p>Especializada en Backend, análisis de datos y gestión de proyectos tecnológicos.</p>
+                <a href="#proyectos" class="btn">Ver mis proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="seccion">
+        <h2>Sobre Mí</h2>
+        <p>Soy estudiante de noveno semestre de Ingeniería de Sistemas y actualmente me encuentro realizando un bootcamp
+            con Generation para certificarme como Desarrolladora Full Stack en Java. Durante este programa hemos
+            desarrollado varios proyectos de manera individual y grupal, obteniendo logros significativos que se
+            encuentran detallados en este portafolio. En mi trabajo anterior duré cerca de 4 años liderando un equipo en
+            el área de la electrónica industrial, donde ejecutamos diversos proyectos que aportaron resultados
+            importantes tanto a nivel personal como para la compañía.</p>
+    </section>
+
+    <!-- Habilidades Tecnológicas -->
+    <section id="habilidades" class="seccion">
+        <h2>Tecnologías y Herramientas</h2>
+        <div class="grid-habilidades">
+            <div class="card-habilidad">
+                <h3>Backend & Lenguajes</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="120" height="120">
+                    <!-- Efecto de brillo neón sutil -->
+                    <defs>
+                        <filter id="brillo-neon">
+                            <feGaussianBlur stdDeviation="1" result="coloredBlur" />
+                            <feMerge>
+                                <feMergeNode in="coloredBlur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <!-- Fondo circular del ícono -->
+                    <circle cx="32" cy="32" r="30" fill="var(--color-fondo)" stroke="var(--color-primario)"
+                        stroke-width="2" />
+
+                    <!-- Estructura del Servidor / Base de Datos -->
+                    <rect x="22" y="18" width="20" height="28" rx="2" fill="none" stroke="var(--color-secundario)"
+                        stroke-width="2" />
+                    <line x1="22" y1="26" x2="42" y2="26" stroke="var(--color-secundario)" stroke-width="2" />
+                    <line x1="22" y1="36" x2="42" y2="36" stroke="var(--color-secundario)" stroke-width="2" />
+
+                    <!-- Luces de estado de procesamiento (Cian brillante) -->
+                    <circle cx="26" cy="22" r="1.5" fill="var(--color-texto)" filter="url(#brillo-neon)" />
+                    <circle cx="26" cy="31" r="1.5" fill="var(--color-texto)" filter="url(#brillo-neon)" />
+                    <circle cx="26" cy="41" r="1.5" fill="var(--color-texto)" filter="url(#brillo-neon)" />
+
+                    <!-- Conexiones de Hardware (Líneas de circuito) -->
+                    <!-- Circuito Izquierdo -->
+                    <path d="M22 22 H 14 V 16 H 10" fill="none" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <circle cx="10" cy="16" r="1.5" fill="var(--color-texto)" />
+
+                    <path d="M22 40 H 14 V 46 H 10" fill="none" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <circle cx="10" cy="46" r="1.5" fill="var(--color-texto)" />
+
+                    <!-- Circuito Derecho -->
+                    <path d="M42 22 H 50 V 16 H 54" fill="none" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <circle cx="54" cy="16" r="1.5" fill="var(--color-texto)" />
+
+                    <path d="M42 40 H 50 V 46 H 54" fill="none" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <circle cx="54" cy="46" r="1.5" fill="var(--color-texto)" />
+
+                    <!-- Procesador central (Chip) integrando el hardware al backend -->
+                    <rect x="27" y="28" width="10" height="10" rx="1" fill="var(--color-fondo)"
+                        stroke="var(--color-texto)" stroke-width="1.5" filter="url(#brillo-neon)" />
+                    <!-- Pines del Microchip -->
+                    <line x1="29" y1="28" x2="29" y2="26" stroke="var(--color-texto)" stroke-width="1" />
+                    <line x1="35" y1="28" x2="35" y2="26" stroke="var(--color-texto)" stroke-width="1" />
+                    <line x1="29" y1="38" x2="29" y2="40" stroke="var(--color-texto)" stroke-width="1" />
+                    <line x1="35" y1="38" x2="35" y2="40" stroke="var(--color-texto)" stroke-width="1" />
+                </svg>
+
+                <p>Java, Spring Boot, Python, JavaScript</p>
+            </div>
+            <div class="card-habilidad">
+                <h3>Bases de Datos & Data</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="120" height="120">
+                    <!-- Efecto de brillo neón -->
+                    <defs>
+                        <filter id="brillo-neon-data">
+                            <feGaussianBlur stdDeviation="1" result="coloredBlur" />
+                            <feMerge>
+                                <feMergeNode in="coloredBlur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <!-- Fondo circular del ícono -->
+                    <circle cx="32" cy="32" r="30" fill="var(--color-fondo)" stroke="var(--color-primario)"
+                        stroke-width="2" />
+
+                    <!-- Estructura de la Base de Datos (Discos apilados) -->
+                    <!-- Disco Superior -->
+                    <ellipse cx="28" cy="20" rx="14" ry="5" fill="none" stroke="var(--color-secundario)"
+                        stroke-width="2" />
+                    <!-- Cuerpo Medio -->
+                    <path d="M 14 20 V 30 A 14 5 0 0 0 42 30 V 20" fill="none" stroke="var(--color-secundario)"
+                        stroke-width="2" />
+                    <!-- Cuerpo Inferior -->
+                    <path d="M 14 30 V 40 A 14 5 0 0 0 42 40 V 30" fill="none" stroke="var(--color-secundario)"
+                        stroke-width="2" />
+
+                    <!-- Luces de estado de los discos -->
+                    <circle cx="18" cy="20" r="1.5" fill="var(--color-texto)" filter="url(#brillo-neon-data)" />
+                    <circle cx="18" cy="30" r="1.5" fill="var(--color-texto)" filter="url(#brillo-neon-data)" />
+                    <circle cx="18" cy="40" r="1.5" fill="var(--color-texto)" filter="url(#brillo-neon-data)" />
+
+                    <!-- Nodos de Datos / Conexiones de extracción (ETL) -->
+                    <path d="M 14 25 H 8 L 6 21" fill="none" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <circle cx="6" cy="21" r="1.5" fill="var(--color-texto)" />
+
+                    <path d="M 14 35 H 8 L 6 39" fill="none" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <circle cx="6" cy="39" r="1.5" fill="var(--color-texto)" />
+
+                    <path d="M 42 25 H 48 L 51 21" fill="none" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <circle cx="51" cy="21" r="1.5" fill="var(--color-texto)" />
+
+                    <!-- Lupa de Análisis de Datos (Analytics / Data Science) -->
+                    <circle cx="46" cy="44" r="8" fill="var(--color-fondo)" stroke="var(--color-texto)" stroke-width="2"
+                        filter="url(#brillo-neon-data)" />
+                    <line x1="51" y1="49" x2="57" y2="55" stroke="var(--color-texto)" stroke-width="2.5"
+                        stroke-linecap="round" filter="url(#brillo-neon-data)" />
+
+                    <!-- Minigráfico de barras (Data) dentro de la lupa -->
+                    <line x1="41" y1="48" x2="41" y2="44" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <line x1="46" y1="48" x2="46" y2="40" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <line x1="51" y1="48" x2="51" y2="45" stroke="var(--color-primario)" stroke-width="1.5" />
+                </svg>
+
+                <p>MySQL, Oracle DB, SQL, pandas, Power BI, DAX, PySpark</p>
+            </div>
+            <div class="card-habilidad">
+                <h3>Frontend & Diseño</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="120" height="120">
+                    <!-- Efecto de brillo neón para Frontend -->
+                    <defs>
+                        <filter id="brillo-neon-front">
+                            <feGaussianBlur stdDeviation="1" result="coloredBlur" />
+                            <feMerge>
+                                <feMergeNode in="coloredBlur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <!-- Fondo circular del ícono -->
+                    <circle cx="32" cy="32" r="30" fill="var(--color-fondo)" stroke="var(--color-primario)"
+                        stroke-width="2" />
+
+                    <!-- Estructura del Navegador Web (UI / Frontend) -->
+                    <rect x="14" y="16" width="36" height="28" rx="2" fill="none" stroke="var(--color-secundario)"
+                        stroke-width="2" />
+                    <!-- Barra superior del navegador -->
+                    <line x1="14" y1="22" x2="50" y2="22" stroke="var(--color-secundario)" stroke-width="2" />
+
+                    <!-- Botones de la ventana (Estilo macOS / navegador) -->
+                    <circle cx="18" cy="19" r="1.5" fill="var(--color-texto)" filter="url(#brillo-neon-front)" />
+                    <circle cx="22" cy="19" r="1.5" fill="var(--color-texto)" filter="url(#brillo-neon-front)" />
+                    <circle cx="26" cy="19" r="1.5" fill="var(--color-texto)" filter="url(#brillo-neon-front)" />
+
+                    <!-- Maquetación de la Interfaz (Wireframe / Diseño) -->
+                    <!-- Menú lateral -->
+                    <rect x="18" y="26" width="6" height="14" rx="1" fill="none" stroke="var(--color-primario)"
+                        stroke-width="1.5" />
+                    <!-- Bloque principal destacado (Banner o Hero) -->
+                    <rect x="28" y="26" width="18" height="6" rx="1" fill="none" stroke="var(--color-texto)"
+                        stroke-width="1.5" filter="url(#brillo-neon-front)" />
+                    <!-- Bloques inferiores (Tarjetas de contenido) -->
+                    <rect x="28" y="35" width="8" height="5" rx="1" fill="none" stroke="var(--color-primario)"
+                        stroke-width="1.5" />
+                    <rect x="38" y="35" width="8" height="5" rx="1" fill="none" stroke="var(--color-primario)"
+                        stroke-width="1.5" />
+
+                    <!-- Conexiones de Nodos / Circuito de red -->
+                    <path d="M 14 30 H 8 L 6 26" fill="none" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <circle cx="6" cy="26" r="1.5" fill="var(--color-texto)" />
+
+                    <path d="M 50 30 H 56 L 58 34" fill="none" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <circle cx="58" cy="34" r="1.5" fill="var(--color-texto)" />
+
+                    <!-- Cursor de Diseño (Simbolizando Figma / Interacción del usuario) -->
+                    <polygon points="46,38 46,52 49,48 53,54 55,53 51,47 56,47" fill="var(--color-fondo)"
+                        stroke="var(--color-texto)" stroke-width="1.5" stroke-linejoin="round"
+                        filter="url(#brillo-neon-front)" />
+                </svg>
+                <p>HTML5, CSS3, Bootstrap, Figma</p>
+            </div>
+            <div class="card-habilidad">
+                <h3>Herramientas</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="120" height="120">
+                    <!-- Efecto de brillo neón para Herramientas -->
+                    <defs>
+                        <filter id="brillo-neon-tools">
+                            <feGaussianBlur stdDeviation="1" result="coloredBlur" />
+                            <feMerge>
+                                <feMergeNode in="coloredBlur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <!-- Fondo circular del ícono -->
+                    <circle cx="32" cy="32" r="30" fill="var(--color-fondo)" stroke="var(--color-primario)"
+                        stroke-width="2" />
+
+                    <!-- Nube de Despliegue (Representando Microsoft Azure / Cloud) -->
+                    <path d="M 20 28 A 6 6 0 0 1 24 20 A 9 9 0 0 1 40 20 A 6 6 0 0 1 44 28 H 20 Z" fill="none"
+                        stroke="var(--color-secundario)" stroke-width="2" />
+                    <line x1="23" y1="28" x2="41" y2="28" stroke="var(--color-secundario)" stroke-width="2" />
+
+                    <!-- Flecha de subida / Deploy hacia la nube -->
+                    <line x1="32" y1="14" x2="32" y2="20" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <polyline points="29,17 32,14 35,17" fill="none" stroke="var(--color-primario)"
+                        stroke-width="1.5" />
+
+                    <!-- Conexiones de Nodos / Circuito de red lateral -->
+                    <path d="M 14 32 H 8 L 6 28" fill="none" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <circle cx="6" cy="28" r="1.5" fill="var(--color-texto)" />
+
+                    <path d="M 50 32 H 56 L 58 36" fill="none" stroke="var(--color-primario)" stroke-width="1.5" />
+                    <circle cx="58" cy="36" r="1.5" fill="var(--color-texto)" />
+
+                    <!-- Árbol de Ramificaciones (Representando Git y GitHub) -->
+                    <!-- Línea principal (Main branch) -->
+                    <line x1="28" y1="36" x2="28" y2="50" stroke="var(--color-texto)" stroke-width="2"
+                        filter="url(#brillo-neon-tools)" />
+                    <!-- Ramificación (Feature branch) -->
+                    <path d="M 28 45 C 36 45, 36 41, 36 36" fill="none" stroke="var(--color-texto)" stroke-width="2"
+                        filter="url(#brillo-neon-tools)" />
+
+                    <!-- Nodos / Commits de Git -->
+                    <circle cx="28" cy="36" r="2.5" fill="var(--color-fondo)" stroke="var(--color-texto)"
+                        stroke-width="1.5" filter="url(#brillo-neon-tools)" />
+                    <circle cx="28" cy="50" r="2.5" fill="var(--color-fondo)" stroke="var(--color-texto)"
+                        stroke-width="1.5" filter="url(#brillo-neon-tools)" />
+                    <circle cx="36" cy="36" r="2.5" fill="var(--color-fondo)" stroke="var(--color-texto)"
+                        stroke-width="1.5" filter="url(#brillo-neon-tools)" />
+                </svg>
+                <p>Git, GitHub, Microsoft Azure</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section id="proyectos" class="seccion bg-claro">
+        <h2>Proyectos Destacados</h2>
+        <div class="grid-proyectos">
+            <!-- Proyecto 1 -->
+            <div class="card-proyecto">
+                <h3>API REST con Spring Boot</h3>
+                <p>Desarrollo de un sistema backend con Java, gestionando persistencia de datos y endpoints seguros.</p>
+                <a href="#" class="enlace-github">Ver en GitHub</a>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="card-proyecto">
+                <h3>Dashboard de Análisis Académico</h3>
+                <p>Procesamiento y limpieza de datos con Power Query y visualización en Power BI para el seguimiento de
+                    estudiantes.</p>
+                <a href="#" class="enlace-github">Ver Proyecto</a>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="card-proyecto">
+                <h3>E-commerce / Catálogo Web</h3>
+                <p>Interfaz web responsiva construida con HTML, CSS, JavaScript y Bootstrap.</p>
+                <a href="#" class="enlace-github">Ver Proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="seccion">
+        <h2>Experiencia</h2>
+        <ul>
+            <li><strong>Monitora Académica:</strong> Procesamiento de datos y seguimiento.</li>
+            <li><strong>Líder de Proyectos Industriales:</strong> Gestión de requerimientos e ingeniería.</li>
+        </ul>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion bg-claro">
+        <h2>Contáctame</h2>
+        <p>¿Tienes un proyecto en mente o buscas talento para tu equipo Backend?</p>
+        <a href="mailto:diana.lizeth.ocampo@gmail.com" class="btn">Enviar Correo</a>
+        <a href="https://www.linkedin.com/in/diana-lizeth-ocampo-249607215/" target="_blank" class="btn btn-secundario">LinkedIn</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Diana Ocampo.</p>
+    </footer>
+    <script src="script.js">    </script>
+</body>
+
+</html>
